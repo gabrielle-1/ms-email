@@ -43,7 +43,7 @@ public class EmailService {
                         true
                     );
 
-            helper.addInline("teste", new ClassPathResource("archives/teste.jpg"), "image/jpg");
+            // helper.addInline("teste", new ClassPathResource("archives/teste.jpg"), "image/jpg");
             emailSender.send(message);
 
             emailModel.setStatusEmail(StatusEmail.SENT);
